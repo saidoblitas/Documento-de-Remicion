@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+        <h2 class="text-center">Productos</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <td>Codigo</td>
+                            <td>Nombre</td>
+                            <td>Cantidad</td>
+                            <td>Serie</td>
+                            <td>Precio</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(item of products; track $index) {
+                            <tr>
+                                <td>{{item.code}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.quantity}}</td>
+                                <td>{{item.serie}}</td>
+                                <td>{{item.price}}</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

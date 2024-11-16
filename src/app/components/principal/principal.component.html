@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-center">Documento de remisión</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    Código: {{principal.id}}
+                </div>
+                <div class="col-md-6">
+                    Fecha: {{principal.date}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-conductor [driver]="principal.driver"></app-conductor>
+    <app-camion [truck]="principal.truck"></app-camion>
+    <app-remitente [remitter]="principal.remitter"></app-remitente>
+    <app-productos [products]="principal.products"></app-productos>
+</div>
